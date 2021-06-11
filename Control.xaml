@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpaceJAL.Control">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" BackgroundColor="#778899">
+
+
+                <StackLayout  Orientation="Vertical" VerticalOptions="FillAndExpand" Margin="-0,-3" >
+                    <Image Source="ControlSysCV.png"  VerticalOptions="End" BackgroundColor="#778899"  ></Image>
+                </StackLayout>
+
+                <StackLayout  Orientation="Vertical" VerticalOptions="CenterAndExpand" Margin="40,-3" >
+                    <Label Text="Dynamic Control" FontAttributes="Bold" TextColor="Aquamarine" FontSize="35" VerticalOptions="End" BackgroundColor="#778899" ></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#778899" Margin="0,-10" >
+                    <FlexLayout  Direction="Column" JustifyContent="SpaceEvenly"  HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#ffd11a">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="0" Grid.Column="0" BackgroundColor="#778899" >
+                                <Image Aspect="AspectFit"  Source="Sterbilization.png" HeightRequest="50" WidthRequest="20" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                <Frame x:Name="frameSterb" BackgroundColor="#778899" Margin="0,0" Padding="0,0,0,0">
+                                    <Label Text="Sterbilization" HorizontalOptions="Center" FontSize="14"  TextColor="White"  FontAttributes="Bold" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameSterb_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="0" Grid.Column="1" BackgroundColor="#778899" >
+                                <Image Aspect="AspectFit"  Source="Mechanic.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" Margin="5,10" />
+                                <Frame x:Name="frameMechanic" BackgroundColor="#778899" Margin="0,0" Padding="0,0,0,0">
+                                    <Label Text="Mechanic and Joint" HorizontalOptions="Center" FontSize="14"  TextColor="White"  FontAttributes="Bold" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameMechanic_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="1" Grid.Column="0" BackgroundColor="#778899" >
+                                <Image Aspect="AspectFit"  Source="Platform.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                <Frame x:Name="frameMultiSS" BackgroundColor="#778899" Margin="0,0" Padding="0,0,0,0">
+                                    <Label Text="Multi-Sensor Platform" HorizontalOptions="Center" FontSize="14"  TextColor="White"  FontAttributes="Bold" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameeMultiSS_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout  Orientation="Vertical" Grid.Row="1" Grid.Column="1" BackgroundColor="#778899" >
+                                <Image Aspect="AspectFit"  Source="Genius.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                <Frame x:Name="frameD
+                                       ynamic" BackgroundColor="#778899" Margin="0,0" Padding="0,0,0,0">
+                                    <Label Text="Dynamic and Non-linear" HorizontalOptions="Center" FontSize="14"  TextColor="White"  FontAttributes="Bold" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameDynamic_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+                        </Grid>
+                    </FlexLayout>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="End" BackgroundColor="#778899"  Margin="20,1.5" HeightRequest="50" WidthRequest="70" >
+
+
+                    <Frame x:Name="frameTIC">
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="#778899">
+                            <Image  Source="TrackingIC.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand" Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameTIC_Tapped" />
+                        </Frame.GestureRecognizers>
+
+                    </Frame>
+                    <Frame>
+
+
+
+                        <StackLayout  Orientation="Vertical" BackgroundColor="#778899">
+                            <Image Aspect="AspectFit"  Source="ControlSystem.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"   Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameControl_Tapped" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+
+
+                    <Frame>
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="#778899">
+                            <Image Aspect="AspectFit"  Source="RemoteSensing.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"  Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameRemote_Tapped" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+
+                    <Frame x:Name="frameWeapon">
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="#778899" >
+                            <Image Source="Weapon.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"  Margin="1.5,-50"/>
+
+                        </StackLayout>
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameWeapon_Tapped" />
+                        </Frame.GestureRecognizers>
+
+                    </Frame>
+
+                </StackLayout>
+            </StackLayout>
+
+
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

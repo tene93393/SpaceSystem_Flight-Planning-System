@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpaceJAL.Weapon">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" BackgroundColor="#0d0d0d">
+
+
+                <StackLayout  Orientation="Vertical" VerticalOptions="FillAndExpand" Margin="-0,-3" >
+                    <Image Source="WeaponCV.png"  VerticalOptions="End" BackgroundColor="##0d0d0d"  ></Image>
+                </StackLayout>
+
+                <StackLayout  Orientation="Vertical" VerticalOptions="CenterAndExpand" Margin="45,-10" >
+                    <Label Text="Weapon System" FontAttributes="Bold" TextColor="#ff80ff" FontSize="35" VerticalOptions="End" BackgroundColor="#0d0d0d" ></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#0d0d0d" Margin="0,-10" >
+                    <FlexLayout  Direction="Column" JustifyContent="SpaceEvenly"  HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#ffd11a">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+
+                            </Grid.ColumnDefinitions>
+
+
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="0" Grid.Column="0" BackgroundColor="#0d0d0d" >
+                                <Image Aspect="AspectFit"  Source="Nippon1.png" HeightRequest="50" WidthRequest="20" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                <Frame x:Name="frameSterb" BackgroundColor="##0d0d0d" Margin="0,0" Padding="0,0,0,0">
+                                    <Label Text="Cold Fusion" HorizontalOptions="Center" FontSize="14"  TextColor="White"  FontAttributes="Bold" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameFusion_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="0" Grid.Column="1" BackgroundColor="#0d0d0d" >
+                                <Image Aspect="AspectFit"  Source="Nippon2.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" Margin="5,10" />
+                                <Frame x:Name="frameMechanic" BackgroundColor="##0d0d0d" Margin="0,0" Padding="0,0,0,0">
+                                    <Label Text="Canon Shooting" HorizontalOptions="Center" FontSize="14"  TextColor="White"  FontAttributes="Bold" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameCanon_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="1" Grid.Column="0" BackgroundColor="#0d0d0d" >
+                                <Image Aspect="AspectFit"  Source="Nippon3.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                <Frame x:Name="frameMultiSS" BackgroundColor="##0d0d0d" Margin="0,0" Padding="0,0,0,0">
+                                    <Label Text="High-Energy Power" HorizontalOptions="Center" FontSize="14"  TextColor="White"  FontAttributes="Bold" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="framePower_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout  Orientation="Vertical" Grid.Row="1" Grid.Column="1" BackgroundColor="#0d0d0d" >
+                                <Image Aspect="AspectFit"  Source="Nippon4.png" HeightRequest="50" WidthRequest="50" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                <Frame x:Name="frameDynamic" BackgroundColor="##0d0d0d" Margin="0,0" Padding="0,0,0,0">
+                                    <Label Text="Plasma Fusion" HorizontalOptions="Center" FontSize="14"  TextColor="White"  FontAttributes="Bold" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="framePlasma_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+                        </Grid>
+                    </FlexLayout>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="End" BackgroundColor="#0d0d0d"  Margin="20,1.5" HeightRequest="50" WidthRequest="70" >
+
+
+                    <Frame x:Name="frameTIC">
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="#0d0d0d">
+                            <Image  Source="TrackingIC.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand" Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameTIC_Tapped" />
+                        </Frame.GestureRecognizers >
+
+                    </Frame>
+                    <Frame>
+
+
+
+                        <StackLayout  Orientation="Vertical" BackgroundColor="#0d0d0d">
+                            <Image Aspect="AspectFit"  Source="ControlSystem.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"   Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameControl_Tapped" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+
+
+                    <Frame>
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="#0d0d0d">
+                            <Image Aspect="AspectFit"  Source="RemoteSensing.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"  Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameRemoteCC_Tapped" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+
+
+                    <Frame x:Name="frameWeapon">
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="##0d0d0d" >
+                            <Image Source="Weapon.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"  Margin="1.5,-50"/>
+
+                        </StackLayout>
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameWeapon1_Tapped" />
+                        </Frame.GestureRecognizers>
+
+                    </Frame>
+
+                </StackLayout>
+            </StackLayout>
+
+
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

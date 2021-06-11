@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpaceJAL.Map5">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"  BackgroundColor="Black">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" >
+                <Image Source="MP5.png" HeightRequest="350" WidthRequest="600"></Image>
+            </StackLayout>
+
+            <StackLayout  Orientation="Vertical"  Margin="0,210">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="Black"  Margin="0,0">
+                    <Image Source="mapsandflags.png" HeightRequest="35"  WidthRequest="35" HorizontalOptions="FillAndExpand"  Margin="0,0"/>
+                    <Button Clicked="Lap5"  Text="Back to menu"  HorizontalOptions="Center" BackgroundColor="#0000ff"
+                                    TextColor="#ffd700"  BorderRadius="30"  Margin="-1,0" Padding="75,0,85,0"/>
+                    <Image Source="space.png" HeightRequest="35"  WidthRequest="35" HorizontalOptions="FillAndExpand"  Margin="0,0"/>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

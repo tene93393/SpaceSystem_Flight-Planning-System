@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpaceJAL.DynamicNonlinSub">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" BackgroundColor="#33d6ff">
+
+
+                <StackLayout  Orientation="Vertical" VerticalOptions="FillAndExpand" Margin="-0,-3" >
+                    <Image Source="Dynamic.png"  VerticalOptions="End" BackgroundColor="#33d6ff"  ></Image>
+
+                </StackLayout>
+
+
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#33d6ff" Margin="0,-55" >
+                    <FlexLayout  Direction="Column" JustifyContent="SpaceEvenly"  HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#ffd11a">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="0" Grid.Column="0" BackgroundColor="#33d6ff" >
+                                <Frame x:Name="frameMSSP1" BackgroundColor="#33d6ff">
+                                    <Image Aspect="AspectFit"  Source="one.png" HeightRequest="50" WidthRequest="20" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameMSSP1_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="0" Grid.Column="1" BackgroundColor="#33d6ff" >
+                                <Frame x:Name="frameMSSP2" BackgroundColor="#33d6ff">
+                                    <Image Aspect="AspectFit"  Source="two.png" HeightRequest="50" WidthRequest="20" VerticalOptions="CenterAndExpand" Margin="5,10" />
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameMSSP2_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="1" Grid.Column="0" BackgroundColor="#33d6ff" >
+                                <Frame x:Name="frameMSSP3" BackgroundColor="#33d6ff">
+                                    <Image Aspect="AspectFit"  Source="three.png" HeightRequest="50" WidthRequest="20" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameMSSP3_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="1" Grid.Column="1" BackgroundColor="#33d6ff" >
+                                <Frame x:Name="frameMSSP4" BackgroundColor="#33d6ff" >
+                                    <Image Aspect="AspectFit"  Source="four.png" HeightRequest="50" WidthRequest="20" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameMSSP4_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="2" Grid.Column="0" BackgroundColor="#33d6ff" >
+                                <Frame x:Name="frameMSSP5" BackgroundColor="#33d6ff" >
+                                    <Image Aspect="AspectFit"  Source="five.png" HeightRequest="50" WidthRequest="20" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameMSSP5_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout  Orientation="Vertical" Grid.Row="2" Grid.Column="1" BackgroundColor="#33d6ff" >
+                                <Frame x:Name="frameMSSP6" BackgroundColor="#33d6ff" >
+                                    <Image Aspect="AspectFit"  Source="six.png" HeightRequest="50" WidthRequest="20" VerticalOptions="CenterAndExpand" Margin="5,10"/>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="frameMSSP6_Tapped" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+
+                        </Grid>
+                    </FlexLayout>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="End" BackgroundColor="#33d6ff"  Margin="20,1.5" HeightRequest="50" WidthRequest="70" >
+
+
+                    <Frame x:Name="frameTIC">
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="#33d6ff">
+                            <Image  Source="TrackingIC.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand" Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameTIC_Tapped" />
+                        </Frame.GestureRecognizers>
+
+                    </Frame>
+                    <Frame>
+
+
+
+                        <StackLayout  Orientation="Vertical" BackgroundColor="#33d6ff">
+                            <Image Aspect="AspectFit"  Source="ControlSystem.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"   Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameControl_Tapped" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+
+
+                    <Frame>
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="#33d6ff">
+                            <Image Aspect="AspectFit"  Source="RemoteSensing.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"  Margin="1.5,-30"/>
+
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameRemote_Tapped" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+
+                    <Frame x:Name="frameWeapon">
+                        <StackLayout  Orientation="Vertical"  BackgroundColor="#33d6ff" >
+                            <Image Source="Weapon.png" HeightRequest="50" 
+                               WidthRequest="35" VerticalOptions="CenterAndExpand"  Margin="1.5,-50"/>
+
+                        </StackLayout>
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="frameWeapon_Tapped" />
+                        </Frame.GestureRecognizers>
+
+                    </Frame>
+
+                </StackLayout>
+            </StackLayout>
+
+
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

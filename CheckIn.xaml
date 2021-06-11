@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpaceJAL.CheckIn">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" BackgroundColor="#707070">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                        <Image Source="jaxa.png" HeightRequest="60"  WidthRequest="60" HorizontalOptions="StartAndExpand" Margin="5,0" />
+                        <Image Source="GISTDA.png" HorizontalOptions="StartAndExpand" HeightRequest="80"  WidthRequest="80" Margin="195,0" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#707070">
+                        <Image Source="CK1.png" HorizontalOptions="FillAndExpand" Margin="0,0" />
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#707070" Margin="0,10" >
+                        <Image Source="TextCover.png" HorizontalOptions="FillAndExpand"  Margin="0,0"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="#707070"  Margin="0,30">
+                        <Image Source="key.png" HeightRequest="35"  WidthRequest="35" HorizontalOptions="FillAndExpand"  Margin="0,0"/>
+                        <Button Clicked="Checkin"  Text="Let's go!"  HorizontalOptions="Center" BackgroundColor="#0000ff"
+                                    TextColor="#ffd700"  BorderRadius="30"  Margin="-1,0" Padding="75,0,85,0"/>
+                        <Image Source="lock.png" HeightRequest="35"  WidthRequest="35" HorizontalOptions="FillAndExpand"  Margin="0,0"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
